@@ -1,9 +1,123 @@
 <html>
-  <head>
+
+<head>
     <title>portfolio</title>
-  </head>
-  
-  <body>
-    <h1>hi</h1>
-  </body>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #1D1D1D;
+        }
+
+        #banner {
+            padding-top: 16px;
+            width: 100%;
+            align-content: center;
+            align-items: center;
+            justify-content: center;
+            justify-items: center;
+        }
+
+        #banner img {
+            margin: auto;
+            display: block;
+        }
+
+        @font-face {
+            font-family: HCo Gotham SSm;
+            src: url(https://css.rbxcdn.com/38e00f7de6f417aa3a458560a15e2b8a-GothamSSm-Light.woff2) format("woff2"), url(https://css.rbxcdn.com/5c779fadf28d7893108d5b896e092e0d-GothamSSm-Light.woff) format("woff");
+            font-weight: 300;
+            font-style: normal
+        }
+
+        @font-face {
+            font-family: HCo Gotham SSm;
+            src: url(https://css.rbxcdn.com/6eafc48312528e2515d622428b6b95cc-GothamSSm-Book.woff2) format("woff2"), url(https://css.rbxcdn.com/713e0b3a604ff4e44f55f9d1c100e8b5-GothamSSm-Book.woff) format("woff");
+            font-weight: 400;
+            font-style: normal
+        }
+
+        @font-face {
+            font-family: HCo Gotham SSm;
+            src: url(https://css.rbxcdn.com/66d562e3299ee732a53db150038c026e-GothamSSm-Medium.woff2) format("woff2"), url(https://css.rbxcdn.com/2ed7693f8cf4d79466dd604c35502f76-GothamSSm-Medium.woff) format("woff");
+            font-weight: 500;
+            font-style: normal
+        }
+
+        @font-face {
+            font-family: HCo Gotham SSm;
+            src: url(https://css.rbxcdn.com/3c102ace52ea35b16da4383819acfa38-GothamSSm-Bold.woff2) format("woff2"), url(https://css.rbxcdn.com/fe0e9885efc341b17f7e600781493f69-GothamSSm-Bold.woff) format("woff");
+            font-weight: 700;
+            font-style: normal
+        }
+
+        @font-face {
+            font-family: HCo Gotham SSm;
+            src: url(https://css.rbxcdn.com/0acd8ff34f3a5c177d02e9011ee74eb3-GothamSSm-Black.woff2) format("woff2"), url(https://css.rbxcdn.com/3ac436cddb043616a4059aa6fe3b0c0a-GothamSSm-Black.woff) format("woff");
+            font-weight: 800;
+            font-style: normal
+        }
+
+        p {
+            color: #fff;
+            font-family: HCo Gotham SSm;
+            text-align: center;
+        }
+
+        h1 {
+            color: #fff;
+            font-family: HCo Gotham SSm;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        h3 {
+            color: #fff;
+            font-family: HCo Gotham SSm;
+            font-weight: 400;
+            text-align: center;
+        }
+
+        img {
+            cursor: pointer;
+            border-radius: 8px;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="banner"><img src="https://i.imgur.com/asIoiF8.png" width="50%"></div>
+    <p>i am a full-stack web developer proficient in javascript & learning python. i can script in luau and make ui
+        designs with figma and roblox studio.</p>
+    <p style="padding-bottom: 8px">examples / experience are below! vvv</p>
+    <h1>UI Examples</h1>
+    <div style="background-color: #fff; opacity: 15%; height: 1px; margin-bottom: 10px;"></div>
+    <div id="banner"><img src="https://i.imgur.com/QNxXDvg.png" width="50%"></div>
+    <div id="banner" style="margin-bottom: 18px;"><img src="https://i.imgur.com/tRbwl3F.png" width="50%"></div>
+
+    <div style="background-color: #fff; opacity: 15%; height: 1px; margin-bottom: 10px;"></div>
+    <h1>Web Examples</h1>
+    <div id="banner" style="margin-bottom: 18px; margin-top: -16px;"><img src="https://i.imgur.com/bioNBwU.png" width="50%"></div>
+    <div style="background-color: #fff; opacity: 15%; height: 1px; margin-bottom: 10px;"></div>
+    <p>(p.s: i currently have no scripting examples. i am still offering scripting)</p>
+    <h3>contact me: worstdontmiss#4525</h3>
+    <script>
+        document.querySelectorAll("img").forEach((img) => {
+            if (img.className != "discord") {
+                img.onclick = () => {
+                    window.open(img.src, "_blank");
+                }
+            }
+        })
+    </script>
+</body>
+
 </html>
